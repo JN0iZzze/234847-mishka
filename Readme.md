@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Тишин](https://up.htmlacademy.ru/adaptive/9/user/234847).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Евсеичев](https://htmlacademy.ru/profile/id310215).
 
 ---
 
