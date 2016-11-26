@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <div class="top-menu">
+      <div class="top-menu__logo-container">
+        <img src="http://placehold.it/150x100" alt="" class="top-menu__logo">
+      </div>
+      <div class="top-menu__burger-container">
+        <img src="http://placehold.it/150x100" alt="" class="top-menu__burger">
+        <img src="http://placehold.it/150x100" alt="" class="top-menu__cross">
+        <div class="top-menu__menu">
+          <div class="top-menu__item">
+            <a href="" class="top-menu__link">Каталог товаров</a>
+          </div>
+          <div class="top-menu__item">
+            <a href="" class="top-menu__link">Вязание на заказ</a>
+          </div>
+          <div class="top-menu__item">
+            <a href="" class="top-menu__link">Поиск по сайту</a>
+          </div>
+          <div class="top-menu__item">
+            <a href="" class="top-menu__link">Корзина: <span class="basket">пока пуста</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-title__container">
+        <img src="http://placehold.it/150x100" alt="" class="header-title__image">
+        <div class="header-title__title">Вязание на заказ</div>
+      </div>
+      <div class="header-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
+    </header>
+    <div class="form__container">
+      <form action="" class="buy" name="buy">
+        <fieldset class="type">
+          <legend>тип</legend>
+          <input type="radio" name="accessory" id="accessory" checked>
+          <label for="accessory">Аксессуар для интерьера</label>
+          <input type="radio" name="toy" id="toy">
+          <label for="toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="color">
+          <legend>цвет</legend>
+          <input type="checkbox" name="white" id="white" checked>
+          <label for="white">Белый</label>
+          <input type="checkbox" name="gray" id="gray" checked>
+          <label for="gray">Серый</label>
+          <input type="checkbox" name="tiffany" id="tiffany">
+          <label for="tiffany">«Тиффани»</label>
+          <input type="checkbox" name="black" id="black">
+          <label for="black">Черный</label>
+          <input type="checkbox" name="pink" id="pink">
+          <label for="pink">Розовый</label>
+          <input type="checkbox" name="orange" id="orange">
+          <label for="orange">Оранжевый</label>
+        </fieldset>
+        <fieldset class="full-name">
+          <legend>ФИО</legend>
+          <label for="name">Имя:</label>
+          <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+          <label for="family-name">Фамилия:</label>
+          <input type="text" name="family-name" id="family-name" placeholder="Введите ваше имя*" required>
+          <label for="second-name">Отчество:</label>
+          <input type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="phone">
+          <legend>тел</legend>
+          <input type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" pattern="+[0-9]{1} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+        </fieldset>
+        <fieldset class="email">
+          <legend>E-mail</legend>
+          <input  type="email" name="email" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="other">
+          <legend>Доп</legend>
+          <textarea  name="email" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <div class="form__required">*Поля обязательны для заполнения</div>
+        <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ" class="btn btn-buy">
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer__social">
+        <div class="social social_insta">
+          <img src="http://placehold.it/150x100" alt="">
+        </div>
+        <div class="social social_fb">
+          <img src="http://placehold.it/150x100" alt="">
+        </div>
+        <div class="social social_tw">
+          <img src="http://placehold.it/150x100" alt="">
+        </div>
+      </div>
+      <img src="http://placehold.it/150x100" alt="" class="footer__separator">
+      <div class="footer__developed">
+        <div class="developed__title">Разработано <img src="http://placehold.it/150x100" alt="" class="developed__icon"></div>
+      </div>
+    </footer>
+  </body>
+</html>
