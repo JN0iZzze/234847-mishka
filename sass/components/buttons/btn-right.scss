@@ -1,0 +1,9 @@
+.btn-right {
+  background-color: $background-right-btn-main;
+  &:hover {
+    background-color: $background-right-btn-hover;
+  }
+  &:active {
+    color: rgba(255,255,255,0.3);
+  }
+}
