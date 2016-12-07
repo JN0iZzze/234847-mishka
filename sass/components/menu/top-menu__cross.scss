@@ -1,0 +1,6 @@
+.top-menu__cross {
+  display: none;
+  &.active {
+    display: inline;
+  }
+}

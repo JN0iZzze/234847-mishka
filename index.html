@@ -3,47 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="top-menu">
       <div class="top-menu__logo-container">
-        <img src="http://placehold.it/150x100" alt="" class="top-menu__logo">
+        <img src="img/logo-mobile.svg" alt="logo mobile" class="top-menu__logo">
+        <div class="top-menu__burger-container">
+          <img src="img/icon-menu-open.svg" alt="menu open" class="top-menu__burger">
+        </div>
       </div>
-      <div class="top-menu__burger-container">
-        <img src="http://placehold.it/150x100" alt="" class="top-menu__burger">
-        <img src="http://placehold.it/150x100" alt="" class="top-menu__cross">
-        <nav class="top-menu__menu">
-          <div class="top-menu-item">
-            <a href="" class="top-menu__link">Каталог товаров</a>
-          </div>
-          <div class="top-menu-item">
-            <a href="" class="top-menu__link">Вязание на заказ</a>
-          </div>
-          <div class="top-menu-item">
-            <a href="" class="top-menu__link">Поиск по сайту</a>
-          </div>
-          <div class="top-menu-item">
-            <a href="" class="top-menu__link">Корзина: <span class="basket">пока пуста</span></a>
-          </div>
-        </nav>
-      </div>
+      <nav class="top-menu__menu">
+        <div class="top-menu__cross-container">
+          <img src="http://placehold.it/150x100" alt="menu close" class="top-menu__cross">
+        </div>
+        <div class="top-menu-item">
+          <a href="" class="top-menu__link">Каталог товаров</a>
+        </div>
+        <div class="top-menu-item">
+          <a href="" class="top-menu__link">Вязание на заказ</a>
+        </div>
+        <div class="top-menu-item">
+          <a href="" class="top-menu__link">Поиск по сайту</a>
+        </div>
+        <div class="top-menu-item">
+          <a href="" class="top-menu__link">Корзина: <span class="basket">пока пуста</span></a>
+        </div>
+      </nav>
     </div>
     <header class="header">
-      <div class="header-title__container">
-        <img src="http://placehold.it/150x100" alt="" class="header-title__image">
-        <h2 class="header-title__title">Милые штуки ручной работы для дома</h2>
+        <div class="header-title__container">
+        <h2 class="header-title__title">Милые штуки <br>ручной<br> работы для дома</h2>
       </div>
       <div class="header-nav__container">
-        <ul class="header-nav-items">
-          <li class="header-nav-item">
-            <a href="#">Предметы интерьера</a>
-            <img src="http://placehold.it/150x100" alt="" class="header-nav__image">
-          </li>
-          <li class="header-nav-item">
-            <a href="#">Детские игрушки</a>
-            <img src="http://placehold.it/150x100" alt="" class="header-nav__image">
-          </li>
-        </ul>
+          <button class="btn btn-left header-nav-item"> Предметы <br>интерьера
+            <img src="img/icon-interior.svg" alt="decor icon" class="header-nav__image">
+          </button>
+          <button class="btn btn-right header-nav-item">Детские <br>игрушки
+            <img src="img/icon-toy.svg" alt="toy icon" class="header-nav__image">
+          </button>
       </div>
     </header>
     <div class="featured">
@@ -65,63 +63,63 @@
         </tr>
       </table>
       <div class="featured__image-container">
-        <img src="http://placehold.it/150x100" alt="" class="featured__image">
+        <img src="img/triple-set-mobile@1x.jpg" alt="wool buscets" class="featured__image">
       </div>
       <div class="featured__price">Цена: <span>990</span> руб.</div>
       <button class="btn btn-buy">заказать</button>
-      <div class="buy__popup">
-        <div class="popup__title">Добавить в корзину</div>
-        <div class="popup__choose-size">Выберите размер:</div>
-        <form class="popup__size-items">
-          <div class="popup__size-item">
-            <div class="popup-size__wrapper">
-              <input type="radio" id="popup-size_s" name="choose size" class="popup-size__input" value="S">
-              <label for="popup-size_s" class="popup-size__label">S</label>
-            </div>
+      <!--<img src="img/zigzag-line-desktop-svg.png" alt="separator line" class="featured__separator">-->
+    </div>
+    <div class="buy__popup">
+      <div class="popup__title">Добавить в корзину</div>
+      <div class="popup__choose-size">Выберите размер:</div>
+      <form class="popup__size-items">
+        <div class="popup__size-item">
+          <div class="popup-size__wrapper">
+            <input type="radio" id="popup-size_s" name="choose size" class="popup-size__input" value="S">
+            <label for="popup-size_s" class="popup-size__label">S</label>
           </div>
-          <div class="popup__size-item">
-            <div class="popup-size__wrapper">
-              <input type="radio" id="popup-size_m" name="choose size" class="popup-size__input" value="M">
-              <label for="popup-size_m" class="popup-size__label">M</label>
-            </div>
+        </div>
+        <div class="popup__size-item">
+          <div class="popup-size__wrapper">
+            <input type="radio" id="popup-size_m" name="choose size" class="popup-size__input" value="M">
+            <label for="popup-size_m" class="popup-size__label">M</label>
           </div>
-          <div class="popup__size-item">
-            <div class="popup-size__wrapper">
-              <input type="radio" id="popup-size_l" name="choose size" class="popup-size__input" value="L">
-              <label for="popup-size_l" class="popup-size__label">L</label>
-            </div>
+        </div>
+        <div class="popup__size-item">
+          <div class="popup-size__wrapper">
+            <input type="radio" id="popup-size_l" name="choose size" class="popup-size__input" value="L">
+            <label for="popup-size_l" class="popup-size__label">L</label>
           </div>
-          <input type="submit" class="btn btn-bucket" value="Добавить">
-        </form>
-      </div>
-      <img src="http://placehold.it/150x100" alt="" class="featured__separator">
+        </div>
+        <input type="submit" class="btn btn-bucket" value="Добавить">
+      </form>
     </div>
     <div class="about-us">
       <div class="about-us__title">Коротко о нас:</div>
-      <div class="about-us-items">
-        <div class="about-us-item">
-          <img src="http://placehold.it/150x100" alt="" class="about-us__item-image">
-          <div class="about-us-item_-description">Экологически чистые материалы</div>
+      <div class="about-us__items">
+        <div class="about-us__item">
+          <img src="img/icon-feature-1.svg" alt="" class="about-us__item-image">
+          <div class="about-us__item-description">Экологически <br>чистые материалы</div>
         </div>
-        <div class="about-us-item">
-          <img src="http://placehold.it/150x100" alt="" class="about-us__item-image">
-          <div class="about-us__item__description">Скандинавский стиль по российской цене</div>
+        <div class="about-us__item">
+          <img src="img/icon-feature-2.svg" alt="" class="about-us__item-image">
+          <div class="about-us__item-description">Скандинавский стиль <br>по российской цене</div>
         </div>
-        <div class="about-us-item">
-          <img src="http://placehold.it/150x100" alt="" class="about-us__item-image">
-          <div class="about-us-item__description">Увеличивает лайки на фотографиях</div>
+        <div class="about-us__item">
+          <img src="img/icon-feature-3.svg" alt="" class="about-us__item-image">
+          <div class="about-us__item-description">Увеличивает лайки <br>на фотографиях</div>
         </div>
-        <div class="about-us-item">
-          <img src="http://placehold.it/150x100" alt="" class="about-us__item-image">
-          <div class="about-us-item__description">Связано вручную с любовью и умилением</div>
+        <div class="about-us__item">
+          <img src="img/icon-feature-4.svg" alt="" class="about-us__item-image">
+          <div class="about-us__item-description">Связано вручную с <br>любовью и умилением</div>
         </div>
-        <div class="about-us-item">
-          <img src="http://placehold.it/150x100" alt="" class="about-us__item-image">
-          <div class="about-us-item__description">Поддержка отечественного производителя</div>
+        <div class="about-us__item">
+          <img src="img/icon-feature-5.svg" alt="" class="about-us__item-image">
+          <div class="about-us__item-description">Поддержка отечественного <br>производителя</div>
         </div>
-        <div class="about-us-item">
-          <img src="http://placehold.it/150x100" alt="" class="about-us__item-image">
-          <div class="about-us-item_-description">Поставляется в подарочной упаковке</div>
+        <div class="about-us__item">
+          <img src="img/icon-feature-6.svg" alt="" class="about-us__item-image">
+          <div class="about-us__item-description">Поставляется в <br>подарочной упаковке</div>
         </div>
       </div>
       <div class="about-us-testimonials">
@@ -132,11 +130,11 @@
           <div class="testimonials__autor-nickname">@misssssiskras</div>
         </div>
         <div class="testimonials__nav">
-          <a href="#" class="nav-prev">prev</a>
-          <a href="#" class="nav-next">next</a>
+          <button class="btn nav-prev">prev</button>
+          <button class="btn nav-next">next</button>
         </div>
         <button class="btn btn-write">Написать</button>
-        <img src="http://placehold.it/150x100" alt="" class="about-us__separator">
+        <!--<img src="http://placehold.it/150x100" alt="" class="about-us__separator">-->
       </div>
     </div>
     <div class="contacts">
@@ -156,22 +154,22 @@
       <iframe src="#" frameborder="0"></iframe>
     </div>
     <button class="btn btn-write-us">Напишите нам</button>
-    </div>
     <footer class="footer">
       <div class="footer-social">
         <div class="social social_insta">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/icon-insta.svg" alt="">
         </div>
         <div class="social social_fb">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/icon-fb.svg" alt="">
         </div>
         <div class="social social_tw">
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/icon-twitter.svg" alt="">
         </div>
       </div>
-      <img src="http://placehold.it/150x100" alt="" class="footer__separator">
+      <!--<img src="http://placehold.it/150x100" alt="" class="footer__separator">-->
       <div class="footer__developed">
-        <div class="developed__title">Разработано <img src="http://placehold.it/150x100" alt="" class="developed__icon"></div>
+        <div class="developed__title">Разработано
+          <img src="img/logo-htmlacademy.svg" alt="" class="developed__icon"></div>
       </div>
     </footer>
   </body>

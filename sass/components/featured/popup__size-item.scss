@@ -1,0 +1,8 @@
+.popup__size-item {
+  display: inline-block;
+  margin-bottom: 51px;
+  margin-right: 7px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
