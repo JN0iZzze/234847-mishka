@@ -27,6 +27,7 @@
 @import "components/header/header-title__title";
 @import "components/header/header-title__container";
 @import "components/header/header-title__image";
+@import "components/header/header-description";
 @import "components/featured/featured";
 @import "components/featured/featured__title";
 @import "components/featured/featured__description";
@@ -84,6 +85,14 @@
 @import "components/catalog/catalog-video__title";
 @import "components/catalog/catalog-item__seporator";
 @import "components/catalog/catalog-item__down";
+@import "components/form/client-email";
+@import "components/form/client-full-name";
+@import "components/form/client-other";
+@import "components/form/client-phone";
+@import "components/form/form__container";
+@import "components/form/form-required__description";
+@import "components/form/product-color";
+@import "components/form/product-type";
 @import "components/footer/footer";
 @import "components/footer/footer-social";
 @import "components/footer/footer__developed";
