@@ -1,0 +1,25 @@
+.client-other{
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-color: $background-separator-aqua;
+  -webkit-margin-start: 1px;
+  -webkit-margin-end: 1px;
+  border-style: solid;
+  margin-bottom: 34px;
+  legend {
+    color: $font-aqua-main;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  label {
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
