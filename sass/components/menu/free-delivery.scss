@@ -1,0 +1,16 @@
+.free-delivery {
+  color: $font-black-main;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: none;
+  @media screen and #{($breakpoint-tablet)} {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    z-index: 1;
+  }
+}
+
+

@@ -2,6 +2,19 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 22px 0;
+  //padding: 22px 0;
+  height: 78px;
   border-bottom: 1px solid $border-header-gray;
+  @media screen and #{$breakpoint-tablet} {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 370px;
+    height: 87px;
+    border-bottom: none;
+  }
+  @media screen and #{$breakpoint-desktop} {
+    position: absolute;
+    left: 50%;
+  }
 }

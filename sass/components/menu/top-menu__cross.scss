@@ -3,4 +3,7 @@
   &.active {
     display: inline;
   }
+  @media screen and #{$breakpoint-tablet} {
+    display: none;
+  }
 }

@@ -1,0 +1,7 @@
+.social {
+  @media screen and #{$breakpoint-tablet}{
+    &_fb, &_insta {
+      padding-right: 41px;
+    }
+  }
+}

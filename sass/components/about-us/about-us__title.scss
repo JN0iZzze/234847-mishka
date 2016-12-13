@@ -4,4 +4,12 @@
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 30px;
+  @media screen and #{$breakpoint-tablet}{
+    font-size: 43px;
+    margin-bottom: 46px;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    padding: 0 176px;
+    box-sizing: border-box;
+  }
 }

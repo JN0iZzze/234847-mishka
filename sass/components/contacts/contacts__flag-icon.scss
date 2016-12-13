@@ -1,0 +1,10 @@
+.contacts__flag-icon {
+  display: none;
+  @media screen and #{$breakpoint-tablet}{
+    display: inherit;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    order: 1;
+    flex-basis: auto;
+  }
+}

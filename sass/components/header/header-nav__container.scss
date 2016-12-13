@@ -1,0 +1,9 @@
+.header-nav__container {
+  @media screen and #{$breakpoint-tablet}{
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+  }
+}

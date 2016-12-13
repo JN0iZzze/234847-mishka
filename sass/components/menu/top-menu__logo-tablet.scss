@@ -1,0 +1,7 @@
+.top-menu__logo-tablet {
+  display: none;
+  @media screen and #{$breakpoint-tablet} and #{$breakpoint-tablet-max}{
+    display: inherit;
+    padding-left: 50px;
+  }
+}

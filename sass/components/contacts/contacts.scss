@@ -1,3 +1,10 @@
 .contacts {
-  padding: 44px 30px 39px 30px;
+  padding: 44px 30px 57px;
+  @media screen and #{$breakpoint-tablet}{
+    padding: 70px 50px 39px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }

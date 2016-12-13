@@ -1,3 +1,6 @@
 .testimonials__nav {
   margin-bottom: 38px;
+  @media screen and #{$breakpoint-tablet}{
+    order: 5;
+  }
 }

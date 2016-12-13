@@ -1,0 +1,17 @@
+.contacts__table {
+
+  @include clearfix;
+  @media screen and #{$breakpoint-tablet} {
+    width: 100%;
+    tr{
+      display: block;
+      float: left;
+      width: 50%;
+    }
+  }
+  @media screen and #{$breakpoint-desktop}{
+    order: 3;
+    width: auto;
+    flex-basis: auto;
+  }
+}

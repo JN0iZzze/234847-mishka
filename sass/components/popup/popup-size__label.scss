@@ -1,0 +1,21 @@
+.popup-size__label {
+  color: $font-lightblack-main;
+  font-family: "Open Sans",sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 78px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $font-lightblack-main-opacity;
+  cursor: pointer;
+  @media screen and #{$breakpoint-tablet}{
+    width: 108px;
+  }
+}
+
+.popup-size__input:checked + .popup-size__label {
+  border: 2px solid $background-btn;
+}

@@ -1,0 +1,15 @@
+.about-us-testimonials {
+  padding: 0 30px;
+  box-sizing: border-box;
+  @media screen and #{$breakpoint-tablet}{
+    height: 457px;
+
+    padding: 86px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    padding-left: 176px;
+  }
+}

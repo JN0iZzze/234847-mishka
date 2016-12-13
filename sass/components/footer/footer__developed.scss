@@ -1,0 +1,9 @@
+.footer__developed {
+  padding: 23px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and #{$breakpoint-tablet}{
+    padding: 0;
+  }
+}

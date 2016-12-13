@@ -1,0 +1,10 @@
+.about-us__items {
+  @media screen and #{$breakpoint-tablet}{
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and #{$breakpoint-desktop}{
+      padding: 0 176px;
+      box-sizing: border-box;
+    }
+  }
+}

@@ -5,7 +5,13 @@
   font-weight: 700;
   text-transform: uppercase;
   background-color: #ffffff;
-  width: 100%;
+  width: 260px;
   padding: 20px 0;
   border: 2px solid $font-lightblack-main;
+  @media screen and #{$breakpoint-tablet}{
+    width: 175px;
+    order: 2;
+    padding: 0;
+    height: 52px;
+  }
 }

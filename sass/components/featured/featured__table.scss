@@ -2,4 +2,10 @@
   border-collapse: collapse;
   margin-bottom: 28px;
   width: 100% ;
+  @media screen and #{$breakpoint-tablet}{
+    width: 50%;
+    //float: left;
+    //clear: left;
+    order: 3;
+  }
 }

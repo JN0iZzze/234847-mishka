@@ -1,0 +1,6 @@
+.about-us-testimonials__wrapper {
+  background: url("../img/review@1x.jpg") no-repeat;
+  @media screen and #{$breakpoint-desktop}{
+    margin: 0 0 0 50px;
+  }
+}

@@ -1,0 +1,11 @@
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $border-footer-gray;
+  padding: 25px 40px 30px;
+  @media screen and #{$breakpoint-tablet}{
+    padding: 0;
+    border-bottom: none;
+  }
+}

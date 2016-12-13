@@ -2,6 +2,11 @@
   color: $font-lightblack-main;
   font-family: "Open Sans",sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 40px;
+  @media screen and #{$breakpoint-tablet}{
+    width: 100%;
+    order: 3;
+    font-size: 17px;
+  }
 }

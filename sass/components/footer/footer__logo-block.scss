@@ -1,0 +1,6 @@
+.footer__logo-block {
+  display: none;
+  @media screen and #{$breakpoint-tablet}{
+    display: block;
+  }
+}
