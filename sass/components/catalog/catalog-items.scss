@@ -1,0 +1,6 @@
+.catalog-items {
+  @media screen and #{$breakpoint-desktop}{
+    display: flex;
+    justify-content: space-between;
+  }
+}

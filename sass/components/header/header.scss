@@ -2,7 +2,7 @@
   position: relative;
   @media screen and #{$breakpoint-tablet}{
     background-image: url("../img/hero-desktop.jpg");
-    ackground-position: 50%, 100%;
+    background-position: 50%, 100%;
     background-size: cover;
     height: 746px;
     padding: 0 50px;

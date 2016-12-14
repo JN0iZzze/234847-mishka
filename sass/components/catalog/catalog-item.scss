@@ -1,0 +1,17 @@
+.catalog-item {
+  margin-bottom: 30px;
+  :last-child {
+    margin-bottom: 0;
+  }
+  @media screen and #{$breakpoint-tablet}{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 53px;
+
+  }
+  @media screen and #{$breakpoint-desktop}{
+    display: block;
+    width: auto;
+  }
+}

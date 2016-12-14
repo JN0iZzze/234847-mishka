@@ -1,0 +1,5 @@
+.catalog-video__icon {
+  @media screen and #{$breakpoint-tablet}{
+    order: 2;
+  }
+}

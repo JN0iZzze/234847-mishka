@@ -1,5 +1,9 @@
 .catalog-video {
   margin-bottom: 58px;
-  padding: 30px 30px 0 30px;
   border: 1px solid $border-header-gray;
+  box-sizing: border-box;
+  @media screen and #{$breakpoint-tablet}{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

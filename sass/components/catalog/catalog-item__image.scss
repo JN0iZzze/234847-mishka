@@ -1,0 +1,10 @@
+.catalog-item__image {
+  display: block;
+  width: 100%;
+  @media screen and #{$breakpoint-tablet}{
+    width: auto;
+    align-items: stretch;
+    flex-grow: 1;
+  }
+  @media screen and #{$breakpoint-tablet}{}
+}

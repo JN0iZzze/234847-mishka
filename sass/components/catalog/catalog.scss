@@ -1,3 +1,9 @@
 .catalog {
   padding: 30px 30px 58px 30px;
+  @media screen and #{$breakpoint-tablet}{
+    padding: 67px 50px 63px 50px;
+  }
+  @media screen and #{$breakpoint-tablet}{
+    padding: 128px 50px 105px 50px;
+  }
 }

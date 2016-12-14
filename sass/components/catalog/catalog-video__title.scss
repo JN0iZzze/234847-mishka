@@ -3,4 +3,8 @@
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
+  display: inline-block;
+  @media screen and #{$breakpoint-tablet}{
+    order: 2;
+  }
 }
