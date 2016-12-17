@@ -8,10 +8,14 @@
     flex-wrap: nowrap;
     width: 100%;
     margin-bottom: 53px;
-
   }
   @media screen and #{$breakpoint-desktop}{
     display: block;
     width: auto;
+    flex: 1 1 0;
+    margin-right: 51px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

@@ -1,0 +1,12 @@
+.form-required__description {
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 31px;
+  @media screen and #{$breakpoint-tablet}{
+    float: right;
+    padding-top: 17px;
+    margin-bottom: 0px;
+  }
+}

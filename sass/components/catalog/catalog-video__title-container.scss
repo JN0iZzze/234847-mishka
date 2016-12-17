@@ -1,0 +1,17 @@
+.catalog-video__title-container {
+  padding: 0 34px;
+  width: 100%;
+  @media screen and #{$breakpoint-tablet}{
+    display: flex;
+    align-items: center;
+    order: 2;
+    padding: 0 42px;
+    margin-bottom: 43px;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    width: 287px;
+    padding: 0;
+    display: block;
+    margin-top: 47px;
+  }
+}

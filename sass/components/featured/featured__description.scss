@@ -6,8 +6,9 @@
   line-height: 24px;
   margin-bottom: 33px;
   @media screen and #{$breakpoint-tablet}{
-    width: 50%;
-    //float: left;
-    order: 1;
+    padding-right: 10px;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    padding-left: 175px;
   }
 }

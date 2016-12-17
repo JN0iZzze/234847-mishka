@@ -22,4 +22,7 @@
     font-size: 17px;
     font-weight: 700;
   }
+  @media screen and #{$breakpoint-tablet}{
+    border-top-width: 0;
+  }
 }

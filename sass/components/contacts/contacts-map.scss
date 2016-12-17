@@ -5,7 +5,10 @@
   background: url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
   background-size: auto;
   @media screen and #{$breakpoint-desktop}{
-    flex-basis: 100%;
-    order: 4;
+    float: right;
+    width: 50%;
+    height: 400px;
+    //vremeno
+    @include clearfix;
   }
 }

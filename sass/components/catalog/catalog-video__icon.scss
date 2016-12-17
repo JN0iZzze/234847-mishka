@@ -1,5 +1,11 @@
 .catalog-video__icon {
+  padding-right: 25px;
   @media screen and #{$breakpoint-tablet}{
-    order: 2;
+    order: 1;
+    padding-right: 33px;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    display: block;
+    margin-bottom: 31px;
   }
 }

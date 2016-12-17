@@ -3,18 +3,28 @@
 }
 
 fieldset {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  padding: 50px 0;
+  @media screen and #{$breakpoint-tablet}{
+    padding-left: 218px;
+    &:nth-child(odd) {
+      background-color: $background-footer-gray;
+    }
+  }
+  @media screen and #{$breakpoint-desktop}{
+    padding-left: 225px;
+  }
 }
 
 legend {
-  float: left;
-  display: inline;
-  border: none;
-  -webkit-padding-start: 0px;
-  -webkit-padding-end: 0px;
-}
-
-.form__fieldset-content {
-
+  padding-right: 10px;
+  @media screen and #{$breakpoint-tablet}{
+    position: absolute;
+    left: 52px;
+    top: 69px;
+    padding-right: 0;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    left: 114px;
+  }
 }

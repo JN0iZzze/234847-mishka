@@ -8,7 +8,7 @@
     font-size: 43px;
   }
   @media screen and #{$breakpoint-desktop}{
-    order: 2;
-    flex-basis: auto;
+    padding-left: 175px;
+    font-size: 53px;
   }
 }

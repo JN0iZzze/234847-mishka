@@ -6,11 +6,23 @@
   line-height: 16px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  br {
+    display: none;
+  }
   @media screen and #{$breakpoint-tablet}{
     position: absolute;
     top: 53px;
     right: 78px;
     margin: 0;
     vertical-align: middle;
+    text-align: center;
+    br {
+      display: block;
+    }
+  }
+  @media screen and #{$breakpoint-desktop}{
+    left: 97px;
+    top: 120px;
+    right: auto;
   }
 }

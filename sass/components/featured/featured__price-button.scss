@@ -1,0 +1,12 @@
+.featured__price-button {
+  order: 4;
+  margin: 0 auto;
+  @media screen and #{$breakpoint-tablet}{
+    float: left;
+    width: calc(50% - 219px);
+    padding-right: 44px;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    padding: 0 44px 0 175px;
+  }
+}

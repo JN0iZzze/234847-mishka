@@ -10,8 +10,12 @@
     }
   }
   @media screen and #{$breakpoint-desktop}{
-    order: 3;
     width: auto;
-    flex-basis: auto;
+    margin-left: 175px;
+    tr{
+      display: table-row;
+      float: none;
+      width: auto;
+    }
   }
 }

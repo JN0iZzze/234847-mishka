@@ -46,9 +46,9 @@
         <!--<img src="http://placehold.it/150x100" alt="" class="header-title__image">-->
         <h2 class="header-title__title">Вязание на заказ</h2>
       </div>
-      <div class="header-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
     </header>
     <div class="form__container">
+      <div class="form__title">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
       <form method="get" class="form" name="buy">
         <fieldset class="product-type">
           <legend>тип</legend>
@@ -127,27 +127,32 @@
             <textarea  name="description" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
-        <div class="form-required__description">*Поля обязательны для заполнения</div>
-        <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ" class="btn btn-buy">
+        <div class="form-requared-button__container">
+          <div class="form-required__description">*Поля обязательны для заполнения</div>
+          <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ" class="btn btn-form-buy">
+        </div>
       </form>
     </div>
-    <footer class="footer">
-      <div class="footer-social">
-        <div class="social social_insta">
-          <img src="img/icon-insta.svg" alt="">
-        </div>
-        <div class="social social_fb">
-          <img src="img/icon-fb.svg" alt="">
-        </div>
-        <div class="social social_tw">
-          <img src="img/icon-twitter.svg" alt="">
-        </div>
+  <footer class="footer">
+    <div class="footer__logo-block">
+      <img src="img/logo-mobile.svg" alt="footer logo" class="footer-logo">
+    </div>
+    <div class="footer-social">
+      <div class="social social_insta">
+        <img src="img/icon-insta.svg" alt="">
       </div>
-      <!--<img src="http://placehold.it/150x100" alt="" class="footer__separator">-->
-      <div class="footer__developed">
-        <div class="developed__title">Разработано
-          <img src="img/logo-htmlacademy.svg" alt="" class="developed__icon"></div>
+      <div class="social social_fb">
+        <img src="img/icon-fb.svg" alt="">
       </div>
-    </footer>
+      <div class="social social_tw">
+        <img src="img/icon-twitter.svg" alt="">
+      </div>
+    </div>
+    <!--<img src="http://placehold.it/150x100" alt="" class="footer__separator">-->
+    <div class="footer__developed">
+      <div class="developed__title">Разработано</div>
+      <img src="img/logo-htmlacademy.svg" alt="" class="developed__icon">
+    </div>
+  </footer>
   </body>
 </html>

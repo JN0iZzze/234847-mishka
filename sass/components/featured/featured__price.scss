@@ -6,9 +6,6 @@
   text-align: center;
   margin-bottom: 28px;
   @media screen and #{$breakpoint-tablet}{
-    width: 50%;
-    float: left;
-    clear: left;
-    order: 4;
+
   }
 }

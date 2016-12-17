@@ -1,8 +1,10 @@
+@import "vendors/reset.scss";
 @import "base/fonts";
 @import "base/variables";
 @import "base/button";
 @import "base/clearfix";
 @import "components/buttons/btn-left";
+@import "components/buttons/btn-form-buy";
 @import "components/buttons/btn-right";
 @import "components/buttons/btn-buy";
 @import "components/buttons/btn-bucket";
@@ -10,6 +12,7 @@
 @import "components/buttons/btn-write-us";
 @import "components/buttons/nav-next";
 @import "components/buttons/nav-prev";
+@import "components/buttons/btn-catalog-buy";
 @import "components/menu/top-menu";
 @import "components/menu/top-menu-item";
 @import "components/menu/top-menu__burger-container";
@@ -45,6 +48,9 @@
 @import "components/featured/featured-table__diameter-option";
 @import "components/featured/featured-table__height";
 @import "components/featured/featured-table__height-option";
+@import "components/featured/featured__content-container";
+@import "components/featured/featured__price-button";
+@import "components/featured/featured__title-container";
 @import "components/popup/buy__popup";
 @import "components/popup/popup-size__input";
 @import "components/popup/popup-size__label";
@@ -77,6 +83,7 @@
 @import "components/contacts/contacts__table";
 @import "components/contacts/contacts__title";
 @import "components/contacts/contacts__flag-icon";
+@import "components/contacts/contacts__title-container";
 @import "components/catalog/catalog";
 @import "components/catalog/catalog-item__name";
 @import "components/catalog/catalog-item";
@@ -91,6 +98,7 @@
 @import "components/catalog/catalog-item__seporator";
 @import "components/catalog/catalog-item__down";
 @import "components/catalog/catalog-video__video";
+@import "components/catalog/catalog-video__title-container";
 @import "components/catalog/catalog-video__icon";
 @import "components/form/client-email";
 @import "components/form/client-full-name";
@@ -101,6 +109,8 @@
 @import "components/form/product-color";
 @import "components/form/product-type";
 @import "components/form/form";
+@import "components/form/form__title";
+@import "components/form/form-requared-button__container";
 @import "components/footer/footer";
 @import "components/footer/footer-social";
 @import "components/footer/footer__developed";
@@ -110,4 +120,3 @@
 @import "components/footer/social";
 @import "components/footer/footer__logo";
 @import "components/footer/footer__logo-block";
-@import "vendors/reset.scss";
