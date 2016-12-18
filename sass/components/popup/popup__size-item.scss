@@ -1,0 +1,10 @@
+.popup__size-item {
+  display: inline-block;
+  margin-bottom: 51px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media screen and #{$breakpoint-tablet}{
+    margin-right: 1px;
+  }
+}

@@ -4,4 +4,7 @@
   font-size: 19px;
   font-weight: 700;
   text-align: center;
+  @media screen and #{$breakpoint-tablet}{
+    padding-right: 30px;
+  }
 }

@@ -1,5 +1,11 @@
 .header-nav__image {
   position: absolute;
-  right: 36px;
   top: 23px;
+
+  &_decor {
+    right: 36px;
+  }
+  &_toy {
+    right: 26px;
+  }
 }

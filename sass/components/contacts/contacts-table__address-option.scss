@@ -4,4 +4,7 @@
   font-size: 15px;
   font-weight: 400;
   vertical-align: text-top;
+  @media screen and #{$breakpoint-tablet} {
+    font-size: 17px;
+  }
 }

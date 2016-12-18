@@ -1,0 +1,11 @@
+.featured__content-container {
+  order: 2;
+  @media screen and #{$breakpoint-tablet}{
+    float: left;
+    width: calc(50% - 44px);
+    padding-right: 44px;
+  }
+  @media screen and #{$breakpoint-desktop}{
+
+  }
+}

@@ -1,0 +1,6 @@
+.popup-size__wrapper {
+  width: auto;
+  @media screen and #{$breakpoint-tablet}{
+    width: auto;
+  }
+}

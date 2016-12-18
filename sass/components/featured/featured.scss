@@ -1,3 +1,14 @@
 .featured {
   padding: 34px 30px 35px 30px;
+  @include clearfix;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and #{$breakpoint-tablet}{
+    display: block;
+    padding: 43px 50px 52px 50px;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    padding: 117px 50px 73px 50px;
+  }
 }

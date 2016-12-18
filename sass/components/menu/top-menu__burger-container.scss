@@ -2,4 +2,7 @@
   position: absolute;
   right: 31px;
   top: 32px;
+  @media screen and #{$breakpoint-tablet} {
+    display: none;
+  }
 }

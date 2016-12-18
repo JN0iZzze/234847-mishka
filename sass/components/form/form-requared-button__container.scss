@@ -1,0 +1,8 @@
+.form-requared-button__container {
+  @media screen and #{$breakpoint-tablet} {
+    padding: 0 50px;
+  }
+  @media screen and #{$breakpoint-desktop} {
+    padding: 0 225px;
+  }
+}

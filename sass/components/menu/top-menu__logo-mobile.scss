@@ -1,0 +1,5 @@
+.top-menu__logo-mobile {
+  @media screen and #{$breakpoint-tablet}{
+    display: none;
+  }
+}

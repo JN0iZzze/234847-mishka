@@ -4,8 +4,11 @@
   color: $font-black-main;
   font-size: 27px;
   font-weight: 700;
-  padding: 76px 0 120px 0;
-  background-position: 50%, 100%;
-  background-image: url("../img/hero-mobile@1x.jpg");
+  padding: 76px 0 0 0;
   margin: 0;
+  @media screen and #{$breakpoint-tablet}{
+    font-size: 43px;
+    color: #000000;
+    padding-top: 161px;
+  }
 }

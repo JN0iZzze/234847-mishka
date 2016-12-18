@@ -1,3 +1,14 @@
 .featured__image-container {
   margin-bottom: 29px;
+  order: 3;
+  display: flex;
+  justify-content: center;
+  @media screen and #{$breakpoint-tablet}{
+    display: inline-block;
+    float: right;
+    width: 50%;
+  }
+  @media screen and #{$breakpoint-desktop}{
+
+  }
 }

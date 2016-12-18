@@ -2,5 +2,11 @@
   font-family: "Open Sans",sans-serif;
   font-size: 25px;
   font-weight: 700;
-  color: black;
+  color: #000000;
+  margin-bottom: 8px;
+  @media screen and #{$breakpoint-tablet}{
+    font-size: 43px;
+    margin-bottom: 55px;
+    order: 1;
+  }
 }

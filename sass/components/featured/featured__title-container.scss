@@ -1,0 +1,9 @@
+.featured__title-container {
+  order: 1;
+  @media screen and #{$breakpoint-tablet}{
+
+  }
+  @media screen and #{$breakpoint-desktop}{
+    padding-left: 175px;
+  }
+}

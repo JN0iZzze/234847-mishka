@@ -3,4 +3,17 @@
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
+  padding: 0 34px;
+  margin-bottom: 29px;
+  @media screen and #{$breakpoint-tablet}{
+    font-size: 15px;
+    margin-bottom: 40px;
+    padding: 0 42px;
+    order: 3;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    width: 287px;
+    padding: 0;
+    margin-bottom: 51px;
+  }
 }

@@ -1,0 +1,9 @@
+.contacts__title-container {
+  margin-bottom: 42px;
+  position: relative;
+  @media screen and #{$breakpoint-desktop}{
+    float: left;
+    width: 50%;
+    margin-bottom: 84px;
+  }
+}

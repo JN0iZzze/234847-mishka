@@ -9,7 +9,9 @@
   <body>
     <div class="top-menu">
       <div class="top-menu__logo-container">
-        <img src="img/logo-mobile.svg" alt="logo mobile" class="top-menu__logo">
+        <img src="img/logo-mobile.svg" alt="logo mobile" class="top-menu__logo-mobile">
+        <img src="img/logo-mobile.svg" alt="logo tablet" class="top-menu__logo-tablet">
+        <img src="img/logo-mobile.svg" alt="logo desctop" class="top-menu__logo-desktop">
         <div class="top-menu__burger-container">
           <img src="img/icon-menu-open.svg" alt="menu open" class="top-menu__burger">
         </div>
@@ -18,19 +20,26 @@
         <div class="top-menu__cross-container">
           <img src="http://placehold.it/150x100" alt="menu close" class="top-menu__cross">
         </div>
-        <div class="top-menu-item">
-          <a href="" class="top-menu__link">Каталог товаров</a>
+        <div class="top-menu-item top-menu-item_catalog">
+          <a href="#" class="top-menu__link">Каталог товаров</a>
         </div>
-        <div class="top-menu-item">
-          <a href="" class="top-menu__link">Вязание на заказ</a>
+        <div class="top-menu-item top-menu-item_order">
+          <a href="#" class="top-menu__link">Вязание на заказ</a>
         </div>
-        <div class="top-menu-item">
-          <a href="" class="top-menu__link">Поиск по сайту</a>
+        <div class="top-menu-item top-menu-item_search">
+          <a href="#" class="top-menu__link">Поиск по сайту</a>
         </div>
-        <div class="top-menu-item">
-          <a href="" class="top-menu__link">Корзина: <span class="basket">пока пуста</span></a>
+        <div class="top-menu-item top-menu-item_basket">
+          <a href="#" class="top-menu__link">Корзина: <span class="basket">пока пуста</span></a>
+        </div>
+        <div class="top-menu-item top-menu-item_new-collection">
+          <a href="#" class="top-menu__link">Новые поступления</a>
+        </div>
+        <div class="top-menu-item top-menu-item_sale">
+          <a href="#" class="top-menu__link">Распродажа</a>
         </div>
       </nav>
+      <div class="free-delivery">Бесплатная доставка по России</div>
     </div>
     <header class="header">
         <div class="header-title__container">
@@ -38,40 +47,45 @@
       </div>
       <div class="header-nav__container">
           <button class="btn btn-left header-nav-item"> Предметы <br>интерьера
-            <img src="img/icon-interior.svg" alt="decor icon" class="header-nav__image">
+            <img src="img/icon-interior.svg" alt="decor icon" class="header-nav__image header-nav__image_decor">
           </button>
           <button class="btn btn-right header-nav-item">Детские <br>игрушки
-            <img src="img/icon-toy.svg" alt="toy icon" class="header-nav__image">
+            <img src="img/icon-toy.svg" alt="toy icon" class="header-nav__image header-nav__image_toy">
           </button>
       </div>
     </header>
     <div class="featured">
-      <div class="featured__title">Вязаные корзинки</div>
-      <div class="featured__subtitle">ТОВАР НЕДЕЛИ</div>
-      <div class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</div>
-      <table class="featured__table">
-        <tr>
-          <td class="featured-table__color">Цвет:</td>
-          <td class="featured-table__color-option">«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <td class="featured-table__diameter">Диаметр:</td>
-          <td class="featured-table__diameter-option">25 см</td>
-        </tr>
-        <tr>
-          <td class="featured-table__height">Высота:</td>
-          <td class="featured-table__height-option">15 см</td>
-        </tr>
-      </table>
+      <div class="featured__title-container">
+        <div class="featured__title">Вязаные корзинки</div>
+        <div class="featured__subtitle">ТОВАР <br>НЕДЕЛИ</div>
+      </div>
       <div class="featured__image-container">
         <img src="img/triple-set-mobile@1x.jpg" alt="wool buscets" class="featured__image">
       </div>
-      <div class="featured__price">Цена: <span>990</span> руб.</div>
-      <button class="btn btn-buy">заказать</button>
-      <!--<img src="img/zigzag-line-desktop-svg.png" alt="separator line" class="featured__separator">-->
+      <div class="featured__content-container">
+        <div class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</div>
+        <table class="featured__table">
+          <tr>
+            <td class="featured-table__color">Цвет:</td>
+            <td class="featured-table__color-option">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="featured-table__diameter">Диаметр:</td>
+            <td class="featured-table__diameter-option">25 см</td>
+          </tr>
+          <tr>
+            <td class="featured-table__height">Высота:</td>
+            <td class="featured-table__height-option">15 см</td>
+          </tr>
+        </table>
+      </div>
+      <div class="featured__price-button">
+        <div class="featured__price">Цена: <span>990</span> руб.</div>
+        <button class="btn btn-buy">заказать</button>
+      </div>
     </div>
     <div class="buy__popup">
-      <div class="popup__title">Добавить в корзину</div>
+      <div class="popup__title">Добавить <br>в корзину</div>
       <div class="popup__choose-size">Выберите размер:</div>
       <form class="popup__size-items">
         <div class="popup__size-item">
@@ -123,10 +137,12 @@
           <div class="about-us__item-description">Поставляется в <br>подарочной упаковке</div>
         </div>
       </div>
+    </div>
+    <div class="about-us-testimonials__wrapper">
       <div class="about-us-testimonials">
         <div class="testimonials__title">Отзывы</div>
-        <div class="tesimonials__body">
-          <div class="testimonials__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</div>
+        <div class="testimonials__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</div>
+        <div class="testimonials__autor-block">
           <div class="testimonials__autor">Анастасия Красильникова</div>
           <div class="testimonials__autor-nickname">@misssssiskras</div>
         </div>
@@ -135,27 +151,32 @@
           <button class="btn nav-next">next</button>
         </div>
         <button class="btn btn-write">Написать</button>
-        <!--<img src="http://placehold.it/150x100" alt="" class="about-us__separator">-->
       </div>
     </div>
     <div class="contacts">
-      <div class="contacts__title">Контакты</div>
-      <table class="contacts__table">
-        <tr>
-          <td class="contacts-table__email">e-mail:</td>
-          <td class="contacts-table__email-option">info@mimimishkashop.ru</td>
-        </tr>
-        <tr>
-          <td class="contacts-table__address">адрес:</td>
-          <td class="contacts-table__address-option">г. Санкт-Петербург,<br>ул. Большая<br>Конюшенная,<br>д. 19/8, офис 101</td>
-        </tr>
-      </table>
+      <div class="contacts__title-container">
+        <div class="contacts__title">Контакты</div>
+        <img src="img/icon-flag.svg" alt="flag icon" class="contacts__flag-icon">
+        <table class="contacts__table">
+          <tr>
+            <td class="contacts-table__email">e-mail:</td>
+            <td class="contacts-table__email-option">info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td class="contacts-table__address">адрес:</td>
+            <td class="contacts-table__address-option">г. Санкт-Петербург,<br>ул. Большая<br>Конюшенная,<br>д. 19/8, офис 101</td>
+          </tr>
+        </table>
+      </div>
+      <div class="contacts-map">
+        <!--<iframe src="#" frameborder="0"></iframe>-->
+      </div>
+      <button class="btn btn-write-us">Напишите нам</button>
     </div>
-    <div class="contacts-map">
-      <iframe src="#" frameborder="0"></iframe>
-    </div>
-    <button class="btn btn-write-us">Напишите нам</button>
     <footer class="footer">
+      <div class="footer__logo-block">
+        <img src="img/logo-mobile.svg" alt="footer logo" class="footer-logo">
+      </div>
       <div class="footer-social">
         <div class="social social_insta">
           <img src="img/icon-insta.svg" alt="">
@@ -169,8 +190,8 @@
       </div>
       <!--<img src="http://placehold.it/150x100" alt="" class="footer__separator">-->
       <div class="footer__developed">
-        <div class="developed__title">Разработано
-          <img src="img/logo-htmlacademy.svg" alt="" class="developed__icon"></div>
+        <div class="developed__title">Разработано</div>
+        <img src="img/logo-htmlacademy.svg" alt="" class="developed__icon">
       </div>
     </footer>
   </body>

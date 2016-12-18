@@ -9,32 +9,40 @@
   <body>
   <div class="top-menu">
     <div class="top-menu__logo-container">
-      <img src="img/logo-mobile.svg" alt="logo mobile" class="top-menu__logo">
+      <img src="img/logo-mobile.svg" alt="logo mobile" class="top-menu__logo-mobile">
+      <img src="img/logo-mobile.svg" alt="logo tablet" class="top-menu__logo-tablet">
+      <img src="img/logo-mobile.svg" alt="logo desctop" class="top-menu__logo-desktop">
       <div class="top-menu__burger-container">
         <img src="img/icon-menu-open.svg" alt="menu open" class="top-menu__burger">
       </div>
     </div>
     <nav class="top-menu__menu">
       <div class="top-menu__cross-container">
-        <img src="img/icon-menu-close.svg" alt="menu close" class="top-menu__cross">
+        <img src="http://placehold.it/150x100" alt="menu close" class="top-menu__cross">
       </div>
-      <div class="top-menu-item">
-        <a href="" class="top-menu__link">Каталог товаров</a>
+      <div class="top-menu-item top-menu-item_catalog">
+        <a href="#" class="top-menu__link">Каталог товаров</a>
       </div>
-      <div class="top-menu-item">
-        <a href="" class="top-menu__link">Вязание на заказ</a>
+      <div class="top-menu-item top-menu-item_order">
+        <a href="#" class="top-menu__link">Вязание на заказ</a>
       </div>
-      <div class="top-menu-item">
-        <a href="" class="top-menu__link">Поиск по сайту</a>
+      <div class="top-menu-item top-menu-item_search">
+        <a href="#" class="top-menu__link">Поиск по сайту</a>
       </div>
-      <div class="top-menu-item">
-        <a href="" class="top-menu__link">Корзина: <span class="basket">пока пуста</span></a>
+      <div class="top-menu-item top-menu-item_basket">
+        <a href="#" class="top-menu__link">Корзина: <span class="basket">пока пуста</span></a>
+      </div>
+      <div class="top-menu-item top-menu-item_new-collection">
+        <a href="#" class="top-menu__link">Новые поступления</a>
+      </div>
+      <div class="top-menu-item top-menu-item_sale">
+        <a href="#" class="top-menu__link">Распродажа</a>
       </div>
     </nav>
+    <div class="free-delivery">Бесплатная доставка по России</div>
   </div>
     <header class="header">
       <div class="header-title__container">
-        <img src="http://placehold.it/150x100" alt="" class="header-title__image">
         <h2 class="header-title__title">Каталог товаров</h2>
       </div>
     </header>
@@ -45,18 +53,15 @@
           <div class="catalog-item__down">
             <div class="catalog-item__name">Зайчик-попрыгайчик</div>
             <div class="catalog-item__options">Рост 30 см, вес 200 г</div>
-            <img src="http://placehold.it/150x100" alt="" class="catalog-item__seporator">
             <div class="catalog-item__price">1 200 руб.</div>
             <a href="#" class="catalog-item__bucket">text</a>
             </div>
           </div>
-        </div>
         <div class="catalog-item">
           <img src="img/photo-2-mobile@1x.jpg" alt="" class="catalog-item__image">
           <div class="catalog-item__down">
             <div class="catalog-item__name">Корзинка для белья</div>
             <div class="catalog-item__options">Диаметр 15 см, высота 10 см</div>
-            <img src="http://placehold.it/150x100" alt="" class="catalog-item__seporator">
             <div class="catalog-item__price">690 руб.</div>
             <a href="#" class="catalog-item__bucket">text</a>
           </div>
@@ -66,21 +71,25 @@
           <div class="catalog-item__down">
             <div class="catalog-item__name">Большая корзинка для игрушек</div>
             <div class="catalog-item__options">Диаметр 30 см, высота 30 см</div>
-            <img src="http://placehold.it/150x100" alt="" class="catalog-item__seporator">
             <div class="catalog-item__price">1 500 руб.</div>
             <a href="#" class="catalog-item__bucket">text</a>
           </div>
         </div>
       </div>
       <div class="catalog-video">
-        <img src="img/icon-video.svg" alt="">
-        <div class="catalog-video__title">Процесс производства</div>
-        <iframe src="#" frameborder="0"></iframe>
+        <div class="catalog-video__title-container">
+          <img src="img/icon-video.svg" alt="" class="catalog-video__icon">
+          <div class="catalog-video__title">Процесс <br>производства</div>
+        </div>
+        <iframe src="" frameborder="0" scrolling="no" class="catalog-video__video"></iframe>
         <div class="catalog-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
-        <button class="btn btn-buy">Сделать заказ</button>
+        <button class="btn btn-catalog-buy">Сделать заказ</button>
       </div>
     </div>
   <footer class="footer">
+    <div class="footer__logo-block">
+      <img src="img/logo-mobile.svg" alt="footer logo" class="footer-logo">
+    </div>
     <div class="footer-social">
       <div class="social social_insta">
         <img src="img/icon-insta.svg" alt="">
@@ -94,8 +103,8 @@
     </div>
     <!--<img src="http://placehold.it/150x100" alt="" class="footer__separator">-->
     <div class="footer__developed">
-      <div class="developed__title">Разработано
-        <img src="img/logo-htmlacademy.svg" alt="" class="developed__icon"></div>
+      <div class="developed__title">Разработано</div>
+      <img src="img/logo-htmlacademy.svg" alt="" class="developed__icon">
     </div>
   </footer>
   </body>

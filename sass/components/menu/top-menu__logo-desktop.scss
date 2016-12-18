@@ -1,0 +1,6 @@
+.top-menu__logo-desktop {
+  display: none;
+  @media screen and #{$breakpoint-desktop}{
+    display: inherit;
+  }
+}

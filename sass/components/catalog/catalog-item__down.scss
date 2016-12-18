@@ -1,4 +1,9 @@
 .catalog-item__down {
   border: 1px solid $border-header-gray;
-  margin-bottom: 30px;
+  padding: 30px 28px;
+  box-sizing: border-box;
+  @media screen and #{$breakpoint-tablet}{
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
 }

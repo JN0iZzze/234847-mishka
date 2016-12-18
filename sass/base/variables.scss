@@ -13,3 +13,15 @@ $background-footer-gray: #f1f1f1;
 $background-separator-aqua: #62d1ba;
 //border
 $border-header-gray: #ececec;
+$border-footer-gray: #e5e5e5;
+//breakpoints
+$breakpoint-max: max-width;
+$breakpoint-min: min-width;
+$phone-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1150px;
+$desktop-min: 1150px;
+$breakpoint-phone: ($breakpoint-max: $phone-max);
+$breakpoint-tablet: ($breakpoint-min: $tablet-min);
+$breakpoint-tablet-max: ($breakpoint-max: $tablet-max);
+$breakpoint-desktop: ($breakpoint-min: $desktop-min);

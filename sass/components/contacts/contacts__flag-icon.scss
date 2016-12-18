@@ -1,0 +1,14 @@
+.contacts__flag-icon {
+  display: none;
+  @media screen and #{$breakpoint-tablet}{
+    position: absolute;
+    display: block;
+    top: -25px;
+    right: 0;
+  }
+  @media screen and #{$breakpoint-desktop}{
+    top: -19px;
+    right: auto;
+    left: 63px;
+  }
+}

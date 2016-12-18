@@ -1,12 +1,18 @@
 .btn-write-us {
+  display: block;
   color: $font-lightblack-main;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #ffffff;
-  width: 100%;
+  width: 260px;
+  margin: 0 auto;
   padding: 20px 0;
   border: 2px solid $font-lightblack-main;
-  margin-bottom: 39px;
+  @media screen and #{$breakpoint-tablet} {
+    width: 230px;
+    padding: 0;
+    height: 52px;
+  }
 }
