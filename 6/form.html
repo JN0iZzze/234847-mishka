@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>HTML Academy: Мишка</title>
+      <link href="css/style.css" rel="stylesheet">
+    <base href="https://htmlacademy-adaptive.github.io/234847-mishka/6/">
+</head>
+  <body>
+  <div class="top-menu">
+    <div class="top-menu__logo-container">
+      <img src="img/logo-mobile.svg" alt="logo mobile" class="top-menu__logo-mobile">
+      <img src="img/logo-mobile.svg" alt="logo tablet" class="top-menu__logo-tablet">
+      <img src="img/logo-mobile.svg" alt="logo desctop" class="top-menu__logo-desktop">
+      <div class="top-menu__burger-container">
+        <img src="img/icon-menu-open.svg" alt="menu open" class="top-menu__burger">
+      </div>
+    </div>
+    <nav class="top-menu__menu">
+      <div class="top-menu__cross-container">
+        <img src="http://placehold.it/150x100" alt="menu close" class="top-menu__cross">
+      </div>
+      <div class="top-menu-item top-menu-item_catalog">
+        <a href="#" class="top-menu__link">Каталог товаров</a>
+      </div>
+      <div class="top-menu-item top-menu-item_order">
+        <a href="#" class="top-menu__link">Вязание на заказ</a>
+      </div>
+      <div class="top-menu-item top-menu-item_search">
+        <a href="#" class="top-menu__link">Поиск по сайту</a>
+      </div>
+      <div class="top-menu-item top-menu-item_basket">
+        <a href="#" class="top-menu__link">Корзина: <span class="basket">пока пуста</span></a>
+      </div>
+      <div class="top-menu-item top-menu-item_new-collection">
+        <a href="#" class="top-menu__link">Новые поступления</a>
+      </div>
+      <div class="top-menu-item top-menu-item_sale">
+        <a href="#" class="top-menu__link">Распродажа</a>
+      </div>
+    </nav>
+    <div class="free-delivery">Бесплатная доставка по России</div>
+  </div>
+    <header class="header-other">
+      <div class="header-other-title__container">
+        <h2 class="header-other-title__title">Вязание на заказ</h2>
+      </div>
+    </header>
+    <div class="form__container">
+      <div class="form__title">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
+      <form method="get" class="form" name="buy">
+        <fieldset class="product-type">
+          <legend>тип</legend>
+          <div class="form__fieldset-content">
+            <div class="type__accessory">
+              <input type="radio" name="accessory" id="accessory" checked>
+              <label for="accessory">Аксессуар для интерьера</label>
+            </div>
+            <div class="type__toy">
+              <input type="radio" name="toy" id="toy">
+              <label for="toy">Детская игрушка</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="product-color">
+          <legend>цвет</legend>
+          <div class="form__fieldset-content">
+            <div class="color__white">
+              <input type="checkbox" name="white" id="white" checked>
+              <label for="white">Белый</label>
+            </div>
+            <div class="color__gray">
+              <input type="checkbox" name="gray" id="gray" checked>
+              <label for="gray">Серый</label>
+            </div>
+            <div class="color__tiffany">
+              <input type="checkbox" name="tiffany" id="tiffany">
+              <label for="tiffany">«Тиффани»</label>
+            </div>
+            <div class="color__black">
+              <input type="checkbox" name="black" id="black">
+              <label for="black">Черный</label>
+            </div>
+            <div class="color__pink">
+              <input type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+            </div>
+            <div class="color__orange">
+              <input type="checkbox" name="orange" id="orange">
+              <label for="orange">Оранжевый</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="client-full-name">
+          <legend>ФИО</legend>
+          <div class="form__fieldset-content">
+            <div class="first-name">
+              <label for="name">Имя:</label>
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="family-name">
+              <label for="family-name">Фамилия:</label>
+              <input type="text" name="family-name" id="family-name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="second-name">
+              <label for="second-name">Отчество:</label>
+              <input type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="client-phone">
+          <legend>тел</legend>
+            <div class="form__fieldset-content">
+            <input type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" pattern="+[0-9]{1} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+          </div>
+        </fieldset>
+        <fieldset class="client-email">
+          <legend>E-mail</legend>
+            <div class="form__fieldset-content">
+              <input  type="email" name="email" placeholder="Ваш Email*" required>
+            </div>
+        </fieldset>
+        <fieldset class="client-other">
+          <legend>Доп</legend>
+          <div class="form__fieldset-content">
+            <textarea  name="description" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </fieldset>
+        <div class="form-requared-button__container">
+          <div class="form-required__description">*Поля обязательны для заполнения</div>
+          <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ" class="btn btn-form-buy">
+        </div>
+      </form>
+    </div>
+  <footer class="footer">
+    <div class="footer__logo-block">
+      <img src="img/logo-mobile.svg" alt="footer logo" class="footer-logo">
+    </div>
+    <div class="footer-social">
+      <div class="social social_insta">
+        <img src="img/icon-insta.svg" alt="">
+      </div>
+      <div class="social social_fb">
+        <img src="img/icon-fb.svg" alt="">
+      </div>
+      <div class="social social_tw">
+        <img src="img/icon-twitter.svg" alt="">
+      </div>
+    </div>
+    <!--<img src="http://placehold.it/150x100" alt="" class="footer__separator">-->
+    <div class="footer__developed">
+      <div class="developed__title">Разработано</div>
+      <img src="img/logo-htmlacademy.svg" alt="" class="developed__icon">
+    </div>
+  </footer>
+  </body>
+</html>
