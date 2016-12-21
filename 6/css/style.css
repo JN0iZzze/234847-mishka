@@ -635,6 +635,22 @@ table {
       display: inline-block;
       float: right;
       width: 50%; } }
+  @media screen and (min-width: 1150px) {
+    .featured__image-container {
+      position: absolute;
+      top: 71px;
+      bottom: 73px;
+      right: 50px;
+      z-index: -1;
+      margin-bottom: 0;
+      display: block;
+      float: none;
+      width: 525px; } }
+
+@media screen and (min-width: 1150px) {
+  .featured__image {
+    width: 100%;
+    height: 100%; } }
 
 .featured__price-button {
   -ms-flex-order: 4;
@@ -953,7 +969,7 @@ table {
 @media screen and (min-width: 1150px) {
   .about-us-testimonials__wrapper {
     padding-bottom: 1px;
-    margin: 0 0 71px 50px; } }
+    margin: 0 0 163px 50px; } }
 
 .testimonials__autor {
   font-family: "Open Sans", sans-serif;
@@ -1020,7 +1036,7 @@ table {
       font-size: 53px; } }
 
 .contacts {
-  padding: 44px 30px 39px; }
+  padding: 44px 0 39px; }
   .contacts:before, .contacts:after {
     content: "";
     display: table; }
@@ -1028,10 +1044,11 @@ table {
     clear: both; }
   @media screen and (min-width: 768px) {
     .contacts {
-      padding: 70px 50px 57px; } }
+      padding: 70px 0px 57px; } }
   @media screen and (min-width: 1150px) {
     .contacts {
-      padding: 69px 50px 47px; } }
+      padding: 0 50px 47px;
+      margin-bottom: 56px; } }
 
 .contacts__flag-icon {
   display: none; }
@@ -1040,21 +1057,27 @@ table {
       position: absolute;
       display: block;
       top: -19px;
-      right: 1px; } }
+      right: 52px; } }
   @media screen and (min-width: 1150px) {
     .contacts__flag-icon {
-      top: -12px;
+      top: 60px;
       right: auto;
       left: 63px; } }
 
 .contacts__title-container {
   margin-bottom: 38px;
-  position: relative; }
+  position: relative;
+  padding: 0 30px; }
+  @media screen and (min-width: 768px) {
+    .contacts__title-container {
+      padding: 0 50px;
+      margin-bottom: 60px; } }
   @media screen and (min-width: 1150px) {
     .contacts__title-container {
       float: left;
+      padding: 70px 0 0;
       width: 50%;
-      margin-bottom: 83px; } }
+      margin-bottom: 78px; } }
 
 .contacts__title {
   color: #000000;
@@ -1154,13 +1177,12 @@ table {
   @media screen and (min-width: 1150px) {
     .contacts-table__address-option {
       padding-top: 32px;
-      line-height: 1.7; } }
+      line-height: 1.8; } }
 
 .contacts-map {
   margin-bottom: 39px;
-  height: 457px;
-  background: url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
-  background-size: auto; }
+  background-color: lightblue;
+  height: 457px; }
   @media screen and (min-width: 768px) {
     .contacts-map {
       height: 497px; } }
@@ -1168,109 +1190,163 @@ table {
     .contacts-map {
       float: right;
       width: 50%;
-      height: 400px; }
+      height: 455px;
+      margin-bottom: 0; }
       .contacts-map:before, .contacts-map:after {
         content: "";
         display: table; }
       .contacts-map:after {
         clear: both; } }
 
+.contacts-map__container {
+  width: 100%;
+  height: 100%; }
+
 .catalog {
   padding: 30px 30px 58px 30px; }
   @media screen and (min-width: 768px) {
     .catalog {
-      padding: 67px 50px 63px 50px; } }
-  @media screen and (min-width: 768px) {
+      padding: 77px 50px 63px 50px; } }
+  @media screen and (min-width: 1150px) {
     .catalog {
       padding: 128px 50px 105px 50px; } }
 
 .catalog-item {
-  margin-bottom: 30px; }
+  margin-bottom: 32px; }
+  .catalog-item:before, .catalog-item:after {
+    content: "";
+    display: table; }
+  .catalog-item:after {
+    clear: both; }
   .catalog-item :last-child {
     margin-bottom: 0; }
   @media screen and (min-width: 768px) {
     .catalog-item {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      width: 100%;
       margin-bottom: 53px; } }
   @media screen and (min-width: 1150px) {
     .catalog-item {
-      display: block;
-      width: auto;
-      -ms-flex: 1 1 0;
-          flex: 1 1 0;
-      margin-right: 51px; }
+      margin-bottom: 56px;
+      margin-right: 49px;
+      width: 317px; }
       .catalog-item:last-child {
         margin-right: 0; } }
 
 .catalog-item__down {
   border: 1px solid #ececec;
-  padding: 30px 28px;
-  box-sizing: border-box; }
+  padding: 24px 27px 30px;
+  box-sizing: border-box;
+  position: relative; }
   @media screen and (min-width: 768px) {
     .catalog-item__down {
-      margin-bottom: 0;
-      -ms-flex-positive: 1;
-          flex-grow: 1; } }
+      height: 334px;
+      width: 50%;
+      float: left; } }
+  @media screen and (min-width: 1150px) {
+    .catalog-item__down {
+      float: none;
+      width: auto;
+      height: auto;
+      min-height: 198px; } }
+
+@media screen and (min-width: 768px) {
+  .catalog-item__image-container {
+    float: left;
+    width: 50%;
+    height: 100%; } }
+
+@media screen and (min-width: 1150px) {
+  .catalog-item__image-container {
+    float: none;
+    width: auto;
+    height: auto; } }
 
 .catalog-item__image {
   display: block;
   width: 100%; }
   @media screen and (min-width: 768px) {
     .catalog-item__image {
-      width: auto;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-      -ms-flex-positive: 1;
-          flex-grow: 1; } }
+      height: 334px; } }
+  @media screen and (min-width: 1150px) {
+    .catalog-item__image {
+      height: 462px; } }
 
 .catalog-item__name {
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
-  margin: 3px 0 17px;
-  line-height: 1.2; }
+  margin: 0 0 14px;
+  line-height: 1.3; }
+  @media screen and (min-width: 768px) {
+    .catalog-item__name {
+      font-size: 20px; } }
 
 .catalog-item__options {
   color: #444444;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  font-weight: 400;
-  padding-bottom: 27px;
-  border-bottom: 1px solid #ececec;
-  margin-bottom: 27px; }
+  font-weight: 400; }
+  @media screen and (min-width: 768px) {
+    .catalog-item__options {
+      font-size: 15px;
+      width: 100%; } }
 
 .catalog-item__price {
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-top: 27px;
+  border-top: 1px solid #ececec;
+  padding-top: 27px; }
+  @media screen and (min-width: 768px) {
+    .catalog-item__price {
+      font-size: 17px;
+      position: absolute;
+      bottom: 29px;
+      left: 32px;
+      width: 273px; } }
+  @media screen and (min-width: 1150px) {
+    .catalog-item__price {
+      bottom: 30px;
+      left: 27px; } }
+
+.catalog-item__bucket {
+  display: none; }
 
 .catalog-item__seporator {
   margin-bottom: 27px; }
 
-@media screen and (min-width: 1150px) {
-  .catalog-items {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; } }
+.catalog-items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (min-width: 768px) {
+    .catalog-items {
+      display: block; } }
+  @media screen and (min-width: 1150px) {
+    .catalog-items {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 .catalog-video {
   border: 1px solid #ececec;
   box-sizing: border-box;
-  padding: 29px 0 33px; }
+  padding: 26px 0 33px; }
   @media screen and (min-width: 768px) {
     .catalog-video {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      padding: 34px 0 46px; } }
+      padding: 0 0 46px; } }
   @media screen and (min-width: 1150px) {
     .catalog-video {
       padding: 0;
@@ -1289,18 +1365,21 @@ table {
   @media screen and (min-width: 768px) {
     .catalog-video__description {
       font-size: 15px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
       padding: 0 42px;
       -ms-flex-order: 3;
-          order: 3; } }
+          order: 3;
+      line-height: 2; } }
   @media screen and (min-width: 1150px) {
     .catalog-video__description {
       width: 287px;
       padding: 0;
-      margin-bottom: 51px; } }
+      margin-bottom: 46px; } }
 
 .catalog-video__icon {
-  padding-right: 25px; }
+  padding-right: 20px;
+  padding-left: 5px;
+  padding-bottom: 3px; }
   @media screen and (min-width: 768px) {
     .catalog-video__icon {
       -ms-flex-order: 1;
@@ -1309,7 +1388,7 @@ table {
   @media screen and (min-width: 1150px) {
     .catalog-video__icon {
       display: block;
-      margin-bottom: 31px; } }
+      margin-bottom: 12px; } }
 
 .catalog-video__title {
   color: #000000;
@@ -1320,6 +1399,7 @@ table {
   line-height: 1.3; }
   @media screen and (min-width: 768px) {
     .catalog-video__title {
+      font-size: 20px;
       -ms-flex-order: 1;
           order: 1; }
       .catalog-video__title br {
@@ -1329,8 +1409,9 @@ table {
       display: block; } }
 
 .catalog-video__title-container {
-  padding: 0 34px;
-  width: 100%; }
+  padding: 0 29px 26px;
+  width: 100%;
+  box-sizing: border-box; }
   @media screen and (min-width: 768px) {
     .catalog-video__title-container {
       display: -ms-flexbox;
@@ -1339,23 +1420,27 @@ table {
           align-items: center;
       -ms-flex-order: 2;
           order: 2;
-      padding: 0 42px;
-      margin-bottom: 43px; } }
+      padding: 0 38px;
+      margin-bottom: 27px; } }
   @media screen and (min-width: 1150px) {
     .catalog-video__title-container {
       width: 287px;
       padding: 0;
       display: block;
-      margin-top: 47px; } }
+      margin-top: 47px;
+      margin-bottom: 31px; } }
 
 .catalog-video__video {
   width: 100%;
   height: 100%;
-  margin-bottom: 34px; }
+  margin-bottom: 30px;
+  display: block; }
   @media screen and (min-width: 768px) {
     .catalog-video__video {
       -ms-flex-order: 1;
-          order: 1; } }
+          order: 1;
+      height: 455px;
+      margin-bottom: 32px; } }
   @media screen and (min-width: 1150px) {
     .catalog-video__video {
       -ms-flex: 1 455px;
