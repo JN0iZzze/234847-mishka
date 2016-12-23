@@ -1449,13 +1449,37 @@ table {
       margin-right: 79px;
       margin-bottom: 0; } }
 
+input[type=checkbox], input[type=radio] {
+  visibility: hidden;
+  position: absolute; }
+
+input[type=text], input[type=email], input[type=tel] {
+  border: none;
+  border-bottom: 2px solid #000000;
+  height: 48px;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  outline: none;
+  width: 100%; }
+
+textarea {
+  border: 2px solid #000000;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  height: 126px;
+  width: 100%;
+  resize: none;
+  padding: 12px 0 0 14px;
+  line-height: 1.2; }
+
 fieldset {
-  position: relative;
-  padding: 50px 0; }
+  position: relative; }
   @media screen and (min-width: 768px) {
     fieldset {
       padding-left: 218px; }
-      fieldset:nth-child(odd) {
+      fieldset:nth-child(even) {
         background-color: #f1f1f1; } }
   @media screen and (min-width: 1150px) {
     fieldset {
@@ -1509,7 +1533,7 @@ legend {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   line-height: 1.8; }
   @media screen and (min-width: 768px) {
     .form__title {
@@ -1520,7 +1544,18 @@ legend {
     .form__title {
       padding: 0 224px; } }
 
+.color {
+  margin-bottom: 46px;
+  display: -ms-flexbox;
+  display: flex; }
+
+.type {
+  margin-bottom: 31px;
+  display: -ms-flexbox;
+  display: flex; }
+
 .product-color {
+  padding: 36px 0 0;
   border-left-width: 0;
   border-right-width: 0;
   border-top-width: 1px;
@@ -1529,7 +1564,7 @@ legend {
   -webkit-margin-start: 1px;
   -webkit-margin-end: 1px;
   border-style: solid;
-  margin-bottom: 34px; }
+  margin-bottom: 0; }
   .product-color legend {
     color: #63d1bb;
     font-family: "Open Sans", sans-serif;
@@ -1541,12 +1576,33 @@ legend {
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
-    font-weight: 700; }
+    font-weight: 700;
+    cursor: pointer;
+    padding-left: 63px;
+    margin-right: 15px;
+    position: relative;
+    margin-bottom: -2px; }
+    .product-color label:before {
+      content: "";
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      margin-right: 0;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #ffffff;
+      border: 2px solid #444444; }
+  .product-color input[type=checkbox]:checked + label:before {
+    content: "";
+    background: url("../img/icon-tick.svg") no-repeat 10% 10% #ffffff;
+    background-size: auto; }
   @media screen and (min-width: 768px) {
     .product-color {
       border-top-width: 0; } }
 
 .product-type {
+  padding: 36px 0 0;
   border-left-width: 0;
   border-right-width: 0;
   border-top-width: 1px;
@@ -1555,7 +1611,7 @@ legend {
   -webkit-margin-start: 1px;
   -webkit-margin-end: 1px;
   border-style: solid;
-  margin-bottom: 34px; }
+  margin-bottom: 7px; }
   .product-type legend {
     color: #63d1bb;
     font-family: "Open Sans", sans-serif;
@@ -1567,7 +1623,35 @@ legend {
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
-    font-weight: 700; }
+    font-weight: 700;
+    cursor: pointer;
+    padding-left: 62px;
+    margin-right: 15px;
+    position: relative;
+    margin-bottom: 0px; }
+    .product-type label:before {
+      content: "";
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      margin-right: 0;
+      position: absolute;
+      left: 0;
+      border-radius: 50%;
+      bottom: 5px;
+      background-color: #ffffff;
+      border: 2px solid #444444; }
+  .product-type input[type=radio]:checked + label:after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 0;
+    position: absolute;
+    left: 11px;
+    border-radius: 50%;
+    bottom: 17px;
+    background-color: #62d1ba; }
   @media screen and (min-width: 768px) {
     .product-type {
       border-top-width: 0; } }
@@ -1581,7 +1665,8 @@ legend {
   -webkit-margin-start: 1px;
   -webkit-margin-end: 1px;
   border-style: solid;
-  margin-bottom: 34px; }
+  margin-bottom: 34px;
+  padding: 6px 0 0; }
   .client-phone legend {
     color: #63d1bb;
     font-family: "Open Sans", sans-serif;
@@ -1607,7 +1692,8 @@ legend {
   -webkit-margin-start: 1px;
   -webkit-margin-end: 1px;
   border-style: solid;
-  margin-bottom: 34px; }
+  margin-bottom: 18px;
+  padding: 23px 0 0; }
   .client-other legend {
     color: #63d1bb;
     font-family: "Open Sans", sans-serif;
@@ -1625,6 +1711,7 @@ legend {
       border-top-width: 0; } }
 
 .client-full-name {
+  padding: 28px 0 0;
   border-left-width: 0;
   border-right-width: 0;
   border-top-width: 1px;
@@ -1633,7 +1720,13 @@ legend {
   -webkit-margin-start: 1px;
   -webkit-margin-end: 1px;
   border-style: solid;
-  margin-bottom: 34px; }
+  margin-bottom: 9px; }
+  .client-full-name .first-name {
+    margin-bottom: 22px; }
+  .client-full-name .family-name {
+    margin-bottom: 22px; }
+  .client-full-name .second-name {
+    margin-bottom: 22px; }
   .client-full-name legend {
     color: #63d1bb;
     font-family: "Open Sans", sans-serif;
@@ -1645,10 +1738,21 @@ legend {
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-right: 25px;
+    margin-bottom: 61px; }
   @media screen and (min-width: 768px) {
     .client-full-name {
       border-top-width: 0; } }
+
+.form__fieldset-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (min-width: 768px) {
+    .form__fieldset-content {
+      display: block; } }
 
 .client-email {
   border-left-width: 0;
@@ -1659,7 +1763,8 @@ legend {
   -webkit-margin-start: 1px;
   -webkit-margin-end: 1px;
   border-style: solid;
-  margin-bottom: 34px; }
+  margin-bottom: 34px;
+  padding: 6px 0 0; }
   .client-email legend {
     color: #63d1bb;
     font-family: "Open Sans", sans-serif;

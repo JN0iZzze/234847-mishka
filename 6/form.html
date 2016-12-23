@@ -53,12 +53,12 @@
         <fieldset class="product-type">
           <legend>тип</legend>
           <div class="form__fieldset-content">
-            <div class="type__accessory">
-              <input type="radio" name="accessory" id="accessory" checked>
+            <div class="type type_accessory">
+              <input type="radio" name="product-type" id="accessory" value="accessory" checked>
               <label for="accessory">Аксессуар для интерьера</label>
             </div>
-            <div class="type__toy">
-              <input type="radio" name="toy" id="toy">
+            <div class="type type_toy">
+              <input type="radio" name="product-type" id="toy" value="toy">
               <label for="toy">Детская игрушка</label>
             </div>
           </div>
@@ -66,27 +66,27 @@
         <fieldset class="product-color">
           <legend>цвет</legend>
           <div class="form__fieldset-content">
-            <div class="color__white">
+            <div class="color color__white">
               <input type="checkbox" name="white" id="white" checked>
               <label for="white">Белый</label>
             </div>
-            <div class="color__gray">
+            <div class="color color__gray">
               <input type="checkbox" name="gray" id="gray" checked>
               <label for="gray">Серый</label>
             </div>
-            <div class="color__tiffany">
+            <div class="color color__tiffany">
               <input type="checkbox" name="tiffany" id="tiffany">
               <label for="tiffany">«Тиффани»</label>
             </div>
-            <div class="color__black">
+            <div class="color color__black">
               <input type="checkbox" name="black" id="black">
               <label for="black">Черный</label>
             </div>
-            <div class="color__pink">
+            <div class="color color__pink">
               <input type="checkbox" name="pink" id="pink">
               <label for="pink">Розовый</label>
             </div>
-            <div class="color__orange">
+            <div class="color color__orange">
               <input type="checkbox" name="orange" id="orange">
               <label for="orange">Оранжевый</label>
             </div>
@@ -101,7 +101,7 @@
             </div>
             <div class="family-name">
               <label for="family-name">Фамилия:</label>
-              <input type="text" name="family-name" id="family-name" placeholder="Введите ваше имя*" required>
+              <input type="text" name="family-name" id="family-name" placeholder="Укажите фамилию*" required>
             </div>
             <div class="second-name">
               <label for="second-name">Отчество:</label>
