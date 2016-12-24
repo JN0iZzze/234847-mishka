@@ -5,16 +5,19 @@
   //padding: 22px 0;
   height: 78px;
   border-bottom: 1px solid $border-header-gray;
+
   @media screen and #{$breakpoint-tablet} {
-    float: left;
+    /*float: left;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;*/
     max-width: 370px;
     height: 87px;
     border-bottom: none;
+    flex: 1 1 50%;
   }
+
   @media screen and #{$breakpoint-desktop} {
-    position: absolute;
-    left: 50%;
+    flex: 1 1 20%;
+    order: 3;
   }
 }

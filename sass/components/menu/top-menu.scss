@@ -1,5 +1,7 @@
 .top-menu {
   position: relative;
   @include clearfix;
-  border-bottom: 1px solid $border-header-gray;
+  /*border-bottom: 1px solid $border-header-gray;*/
+  display: flex;
+  flex-flow: row wrap;
 }
